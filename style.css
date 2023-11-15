@@ -1,0 +1,167 @@
+html {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 15% 8%;
+    background-color: #ecf2f8;
+}
+
+#main-container {
+    /* border: 2px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+/* #left, #testimonial-5 {
+    border: 2px solid green;
+} */
+
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 20px;
+}
+
+#top-in-left, #bottom-in-left {
+    /* border: 2px solid blue; */
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#testimonial-1, #testimonial-2 {
+    /* border: 2px solid green; */
+    flex-grow: 1;
+}
+
+#testimonial-3, #testimonial-4 {
+    /* border: 2px solid green; */
+    flex-grow: 1;
+}
+
+#testimonial-1 {
+    background-color: #7541c8;
+    color: white;
+    position: relative;
+}
+
+#quote {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    z-index: 0;
+}
+
+#testimonial-2 {
+    background-color: #48556a;
+    color: white;
+}
+
+#testimonial-3 {
+    background-color:white;
+    color: #48556a;
+}
+
+#testimonial-4 {
+    background-color:#19212e;
+    color: white;
+}
+
+#testimonial-5 {
+    background-color:white;
+    color: #48556a;
+}
+
+.testimonial {
+    padding: 20px;
+    box-shadow: 0 0 2px 0 rgb(0,0,0, 0.5);
+    border-radius: 3%;
+}
+
+.testimonial > h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.testimonial > p {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.header img {
+    border-radius: 50%;
+    transform: scale(0.7);
+}
+
+#photo-1, #photo-4 {
+    border: 3px solid #7541c8;
+}
+
+.header .description {
+    margin-left: 7px;
+}
+
+.header .description p {
+    opacity: 0.5;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+@media (min-width: 576px) {
+    body {
+        padding: 10%;
+        max-width: 1440px;
+    }
+
+    #main-container {
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: 20px;
+    }
+
+    #left {
+        flex-basis: 80%;
+    }
+
+    #testimonial-5 {
+        flex-basis: 20%;
+    }
+
+    #top-in-left, #bottom-in-left {
+        flex-direction: row;
+        column-gap: 20px;
+        flex-basis: 50%;
+        justify-content: end;
+    }
+
+    #testimonial-1, #testimonial-4{
+        flex-basis: 65%;
+    }
+
+    #testimonial-2, #testimonial-3 {
+        flex-basis: 35%;
+    }
+}
